@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Invitación a mi ceremonia de graduación. ¡Acompáñame en este momento especial!">
+    <meta property="og:title" content="Invitación de Graduación">
+    <meta property="og:description" content="¡Estás invitado a mi ceremonia de graduación!">
+    <meta property="og:type" content="website">
+    
+    <title>Invitación de Graduación</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title fade-in">¡Me Gradúo!</h1>
+                <div class="divider fade-in fade-in-delay-1"></div>
+                <p class="hero-subtitle fade-in fade-in-delay-2">
+                    Después de años de esfuerzo y dedicación,<br>
+                    este momento finalmente ha llegado
+                </p>
+                <h2 class="fade-in fade-in-delay-3" style="color: var(--color-gold-light); font-size: clamp(1.5rem, 3vw, 2.5rem);">
+                    Miguel Eduardo Ramirez Ramirez
+                </h2>
+                <p class="fade-in fade-in-delay-3" style="font-size: clamp(1.125rem, 2.5vw, 1.5rem); color: var(--color-text-muted); margin-top: var(--spacing-sm);">
+                    Técnico Superior en Informática
+                </p>
+            </div>
+        </div>
+        <img src="images/grado.png" alt="" class="decoration decoration-top-left">
+        <img src="images/grado.png" alt="" class="decoration decoration-bottom-right">
+    </section>
+
+    <!-- Countdown Section -->
+    <section id="countdown-section" class="reveal">
+        <div class="container">
+            <h2 style="text-align: center;">Cuenta Regresiva</h2>
+            <div class="divider"></div>
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-value" id="days">00</span>
+                    <span class="countdown-label">Días</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="hours">00</span>
+                    <span class="countdown-label">Horas</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="minutes">00</span>
+                    <span class="countdown-label">Minutos</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="seconds">00</span>
+                    <span class="countdown-label">Segundos</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Section -->
+    <section id="details" class="reveal">
+        <div class="container">
+            <h2 style="text-align: center;">Cronograma de Eventos</h2>
+            <div class="divider"></div>
+            
+            <div class="details-grid">
+                <!-- Evento 1: Caravana -->
+                <div class="card detail-item">
+                    <div class="detail-icon">🚗</div>
+                    <div class="detail-label">Caravana</div>
+                    <div class="detail-value">6 de Diciembre, 2025</div>
+                    <div style="font-size: 0.9rem; color: var(--color-gold); margin-top: 0.5rem; font-weight: 600;">
+                        2:00 PM
+                    </div>
+                    <div style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.3rem;">
+                        Paseo del estudiante Ejido 
+                    </div>
+                </div>
+                
+                <!-- Evento 2: Misa -->
+                <div class="card detail-item">
+                    <div class="detail-icon">⛪</div>
+                    <div class="detail-label">Misa</div>
+                    <div class="detail-value">8 de Diciembre, 2025</div>
+                    <div style="font-size: 0.9rem; color: var(--color-gold); margin-top: 0.5rem;">
+                        Hora por confirmar
+                    </div>
+                    <div style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.3rem;">
+                       Catedral Basílica Menor de la Inmaculada Concepción
+                    </div>
+                </div>
+                
+                <!-- Evento 3: Firma -->
+                <div class="card detail-item">
+                    <div class="detail-icon">✍️</div>
+                    <div class="detail-label">Firma</div>
+                    <div class="detail-value">10 de Diciembre, 2025</div>
+                    <div style="font-size: 0.9rem; color: var(--color-gold); margin-top: 0.5rem;">
+                        Hora por confirmar
+                    </div>
+                    <div style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.3rem;">
+                        Centro Cultural Tulio Febres Cordero
+                    </div>
+                </div>
+                
+                <!-- Evento 4: Acto de Graduación -->
+                <div class="card detail-item">
+                    <div class="detail-icon">🎓</div>
+                    <div class="detail-label">Acto de Graduación</div>
+                    <div class="detail-value">11 de Diciembre, 2025</div>
+                    <div style="font-size: 0.9rem; color: var(--color-gold); margin-top: 0.5rem; font-weight: 600;">
+                        hora por confirmar
+                    </div>
+                    <div style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.3rem;">
+                        Centro Cultural Tulio Febres Cordero
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top: var(--spacing-lg); text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;">
+                <h3 style="color: var(--color-gold-light); margin-bottom: var(--spacing-md);">
+                    "El futuro pertenece a quienes creen en la belleza de sus sueños"
+                </h3>
+                <p style="color: var(--color-text-muted); font-style: italic;">
+                    Tu presencia en estos días tan especiales significaría mucho para mí.<br>
+                    ¡Espero verte allí para celebrar juntos este logro!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section id="rsvp" class="reveal">
+        <div class="container">
+            <h2 style="text-align: center;">Confirma tu Asistencia</h2>
+            <div class="divider"></div>
+            
+            <div class="card" style="max-width: 600px; margin: var(--spacing-lg) auto 0;">
+                <form id="rsvp-form" action="https://formspree.io/f/xeowzron" method="POST">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Nombre Completo *</label>
+                        <input type="text" id="name" name="nombre" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label">Correo Electrónico *</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="attendance" class="form-label">¿Asistirás? *</label>
+                        <select id="attendance" name="asistencia" class="form-select" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="Sí, asistiré">Sí, asistiré</option>
+                            <option value="No podré asistir">No podré asistir</option>
+                            <option value="Aún no estoy seguro/a">Aún no estoy seguro/a</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="guests" class="form-label">Número de Acompañantes</label>
+                        <input type="number" id="guests" name="acompañantes" class="form-input" min="0" max="5" value="0">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-label">Mensaje (Opcional)</label>
+                        <textarea id="message" name="mensaje" class="form-textarea" placeholder="Déjame un mensaje..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        Confirmar Asistencia
+                    </button>
+                </form>
+                
+                <div id="success-message" class="success-message">
+                    ✓ ¡Gracias por confirmar! Tu respuesta ha sido registrada.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: var(--spacing-lg) 0; background: rgba(0, 0, 0, 0.3);">
+        <div class="container">
+            <p style="color: var(--color-text-muted); font-size: 0.875rem;">
+                ¡Nos vemos pronto! 🎓✨
+            </p>
+            <div class="divider" style="margin-top: var(--spacing-md);"></div>
+            <p style="color: var(--color-text-muted); font-size: 0.75rem; margin-top: var(--spacing-md);">
+                © 2025 - Invitación de Graduación
+                Designed by Miguel Ramirez  
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4af37;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f4e4c1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4af37;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Laurel wreath left side -->
+  <path d="M 80,150 Q 70,130 75,110 Q 80,90 90,80 Q 85,100 90,120 Q 95,140 100,150" 
+        fill="none" stroke="url(#goldGradient)" stroke-width="3"/>
+  <ellipse cx="75" cy="110" rx="8" ry="12" fill="url(#goldGradient)" opacity="0.8"/>
+  <ellipse cx="85" cy="95" rx="8" ry="12" fill="url(#goldGradient)" opacity="0.7"/>
+  <ellipse cx="90" cy="125" rx="8" ry="12" fill="url(#goldGradient)" opacity="0.8"/>
+  
+  <!-- Laurel wreath right side -->
+  <path d="M 220,150 Q 230,130 225,110 Q 220,90 210,80 Q 215,100 210,120 Q 205,140 200,150" 
+        fill="none" stroke="url(#goldGradient)" stroke-width="3"/>
+  <ellipse cx="225" cy="110" rx="8" ry="12" fill="url(#goldGradient)" opacity="0.8"/>
+  <ellipse cx="215" cy="95" rx="8" ry="12" fill="url(#goldGradient)" opacity="0.7"/>
+  <ellipse cx="210" cy="125" rx="8" ry="12" fill="url(#goldGradient)" opacity="0.8"/>
+  
+  <!-- Bottom curves -->
+  <path d="M 100,150 Q 120,170 150,175 Q 180,170 200,150" 
+        fill="none" stroke="url(#goldGradient)" stroke-width="3"/>
+  
+  <!-- Stars -->
+  <g transform="translate(150, 80)">
+    <path d="M 0,-15 L 3,-5 L 13,-5 L 5,2 L 8,12 L 0,5 L -8,12 L -5,2 L -13,-5 L -3,-5 Z" 
+          fill="url(#goldGradient)"/>
+  </g>
+  
+  <g transform="translate(120, 120)">
+    <path d="M 0,-8 L 2,-3 L 7,-3 L 3,1 L 5,6 L 0,3 L -5,6 L -3,1 L -7,-3 L -2,-3 Z" 
+          fill="url(#goldGradient)" opacity="0.8"/>
+  </g>
+  
+  <g transform="translate(180, 120)">
+    <path d="M 0,-8 L 2,-3 L 7,-3 L 3,1 L 5,6 L 0,3 L -5,6 L -3,1 L -7,-3 L -2,-3 Z" 
+          fill="url(#goldGradient)" opacity="0.8"/>
+  </g>
+  
+  <!-- Sparkles -->
+  <circle cx="110" cy="100" r="2" fill="#f4e4c1" opacity="0.9"/>
+  <circle cx="190" cy="100" r="2" fill="#f4e4c1" opacity="0.9"/>
+  <circle cx="150" cy="190" r="2" fill="#d4af37" opacity="0.8"/>
+  <circle cx="130" cy="160" r="1.5" fill="#f4e4c1" opacity="0.7"/>
+  <circle cx="170" cy="160" r="1.5" fill="#f4e4c1" opacity="0.7"/>
+</svg>
