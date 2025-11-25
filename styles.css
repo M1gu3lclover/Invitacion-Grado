@@ -438,21 +438,51 @@ section {
   opacity: 0.3;
   pointer-events: none;
   z-index: 0;
+  display: none; /* Ocultar en móviles por defecto */
 }
 
 .decoration-top-left {
-  top: 5%;
+  top: 10%;
   left: 5%;
   width: 150px;
-  height: 150px;
+  height: auto;
+  transform: rotate(-15deg);
 }
 
 .decoration-bottom-right {
-  bottom: 5%;
+  bottom: 10%;
   right: 5%;
   width: 150px;
-  height: 150px;
-  transform: rotate(180deg);
+  height: auto;
+  transform: rotate(15deg);
+}
+
+/* Mostrar decoraciones solo en tablets y desktop */
+@media (min-width: 768px) {
+  .decoration {
+    display: block;
+  }
+  
+  .decoration-top-left {
+    width: 180px;
+  }
+  
+  .decoration-bottom-right {
+    width: 180px;
+  }
+}
+
+/* Ajustar tamaño en desktop grande */
+@media (min-width: 1200px) {
+  .decoration-top-left {
+    width: 220px;
+    left: 8%;
+  }
+  
+  .decoration-bottom-right {
+    width: 220px;
+    right: 8%;
+  }
 }
 
 /* Mapa */
