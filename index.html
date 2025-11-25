@@ -17,6 +17,7 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallery.css">
 </head>
 <body>
     <!-- Hero Section -->
@@ -91,12 +92,12 @@
                 <div class="card detail-item">
                     <div class="detail-icon">⛪</div>
                     <div class="detail-label">Misa</div>
-                    <div class="detail-value">8 de Diciembre, 2025</div>
+                    <div class="detail-value">9 de Diciembre, 2025</div>
                     <div style="font-size: 0.9rem; color: var(--color-gold); margin-top: 0.5rem;">
                         4:00 PM
                     </div>
                     <div style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.3rem;">
-                       Capilla Universitaria Sector la Hechicera 
+                       Capilla Universitaria sector la hechicera 
                     </div>
                 </div>
                 
@@ -119,7 +120,7 @@
                     <div class="detail-label">Acto de Graduación</div>
                     <div class="detail-value">11 de Diciembre, 2025</div>
                     <div style="font-size: 0.9rem; color: var(--color-gold); margin-top: 0.5rem; font-weight: 600;">
-                        hora por confirmar
+                        8:00 AM
                     </div>
                     <div style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.3rem;">
                         Centro Cultural Tulio Febres Cordero
@@ -189,6 +190,55 @@
         </div>
     </section>
 
+    <!-- Gallery Section (se activa automáticamente después del evento) -->
+    <section id="gallery" class="gallery-section reveal" style="display: none !important;">
+        <div class="container">
+            <h2 style="text-align: center;">Galería de Fotos del Evento</h2>
+            <div class="divider"></div>
+            
+            <p style="text-align: center; color: var(--color-text-muted); margin-bottom: var(--spacing-lg);">
+                ¡El evento ha terminado! Comparte tus mejores momentos
+            </p>
+            
+            <!-- Botón para subir fotos -->
+            <div class="card" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h3 style="color: var(--color-gold-light); margin-bottom: var(--spacing-md);">
+                    📸 Sube tus Fotos
+                </h3>
+                <p style="color: var(--color-text-muted); margin-bottom: var(--spacing-md);">
+                    ¿Tomaste fotos en la graduación? ¡Compártelas con todos!
+                </p>
+                <!-- IMPORTANTE: Reemplaza este enlace con tu álbum de Google Photos -->
+                <a href="https://photos.app.goo.gl/1qYPBcaayL5Ltzg78" target="_blank" class="btn btn-primary">
+                    📤 Subir Mis Fotos
+                </a>
+                <p style="color: var(--color-text-muted); font-size: 0.875rem; margin-top: var(--spacing-sm);">
+                    Se abrirá Google Photos para que subas tus imágenes
+                </p>
+            </div>
+            
+            <!-- Ver galería completa -->
+            <div class="card" style="text-align: center;">
+                <h3 style="color: var(--color-gold-light); margin-bottom: var(--spacing-md);">
+                    🖼️ Ver Todas las Fotos
+                </h3>
+                <p style="color: var(--color-text-muted); margin-bottom: var(--spacing-md);">
+                    Revive los mejores momentos compartidos por todos los invitados
+                </p>
+                <!-- IMPORTANTE: Reemplaza este enlace con tu álbum de Google Photos -->
+                <a href="https://photos.app.goo.gl/1qYPBcaayL5Ltzg78" target="_blank" class="btn btn-secondary">
+                    Ver Galería Completa
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para ver fotos en grande -->
+    <div class="gallery-modal" id="gallery-modal">
+        <span class="gallery-close" id="gallery-close">&times;</span>
+        <img src="" alt="Foto ampliada" id="modal-image">
+    </div>
+
     <!-- Footer -->
     <footer style="text-align: center; padding: var(--spacing-lg) 0; background: rgba(0, 0, 0, 0.3);">
         <div class="container">
@@ -205,6 +255,6 @@
 
     <!-- Script -->
     <script src="script.js"></script>
+    <script src="gallery.js"></script>
 </body>
 </html>
-

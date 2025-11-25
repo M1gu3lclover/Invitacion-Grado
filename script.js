@@ -1,16 +1,29 @@
 // Countdown Timer
 function initCountdown() {
-    const countdownDate = new Date('December 11, 2025 18:00:00').getTime();
+    const countdownDate = new Date('December 11, 2025 08:00:00').getTime();
+    const gallerySection = document.getElementById('gallery');
     
     const updateCountdown = () => {
         const now = new Date().getTime();
         const distance = countdownDate - now;
         
         if (distance < 0) {
+            // Cuenta regresiva terminada - mostrar 00:00:00:00
             document.getElementById('days').textContent = '00';
             document.getElementById('hours').textContent = '00';
             document.getElementById('minutes').textContent = '00';
             document.getElementById('seconds').textContent = '00';
+            
+            // Activar galería de fotos automáticamente
+            if (gallerySection) {
+                gallerySection.style.display = 'block'; // Quitar el display none
+                gallerySection.classList.add('active');
+                // Scroll suave a la galería (opcional)
+                setTimeout(() => {
+                    gallerySection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 1000);
+            }
+            
             return;
         }
         
