@@ -153,6 +153,7 @@ section {
 /* Tarjetas con Glassmorphism */
 .card {
   background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-lg);
@@ -265,6 +266,7 @@ section {
 
 .countdown-item {
   background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(212, 175, 55, 0.3);
   border-radius: var(--radius-md);
@@ -409,7 +411,7 @@ section {
 /* Responsive */
 @media (max-width: 768px) {
   section {
-    min-height: auto;
+    min-height: 0;
     padding: var(--spacing-lg) 0;
   }
   
@@ -560,4 +562,13 @@ section {
 .sparkle-5 {
   animation-duration: 2.2s;
   animation-delay: 1.2s;
+}
+
+/* Gallery visibility: control via classes so JS can toggle */
+.gallery-section {
+  display: none;
+}
+
+.gallery-section.active {
+  display: block;
 }
