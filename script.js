@@ -1,6 +1,6 @@
 // Countdown Timer
 function initCountdown() {
-    const countdownDate = new Date('December 11, 2025 08:00:00').getTime();
+    const countdownDate = new Date('December 12, 2025 08:00:00').getTime();
     const gallerySection = document.getElementById('gallery');
     
     const updateCountdown = () => {
